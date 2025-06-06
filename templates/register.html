@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+    <div class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+        <div class="container flex-column">
+            {% for category, message in get_flashed_messages(with_categories=true) %} 
+                <div class="alert alert-{{ category }}" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            <div class="mb-3">
+                <h3>Register</h3>
+                <form method="post">
+                    <input type="text" name="username" placeholder="Username" autofocus autocomplete="off" class="form-control mb-3">
+                    <input type="password" name="password" placeholder="Password" autocomplete="off" class="form-control mb-3">
+                    <input type="password" name="confirm" placeholder="Confirm password" autocomplete="off" class="form-control mb-3">
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                </form>
+            </div>
+
+            <div>
+                <form action="{{ url_for('auth.login') }}">
+                    <button type="submit" class="btn btn-link">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

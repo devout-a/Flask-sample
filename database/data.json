@@ -1,0 +1,35 @@
+{
+  "alexis": {
+    "password": "aaaa",
+    "tasks": [
+      "Eat"
+    ],
+    "finished": [
+      "Repeat"
+    ],
+    "journals": []
+  },
+  "lorie": {
+    "password": "aaaa",
+    "tasks": [],
+    "finished": [
+      "task"
+    ],
+    "journals": []
+  },
+  "alex": {
+    "password": "alex",
+    "tasks": [
+      "d",
+      "d",
+      "d",
+      "d",
+      "zx"
+    ],
+    "finished": [
+      "a",
+      "s"
+    ],
+    "journals": []
+  }
+}
